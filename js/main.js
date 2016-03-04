@@ -17,3 +17,41 @@ var average = totalSum/prices.length;
  average.toFixed(2);
 
 
+//second answer:  look at each value of price in the array items
+//filter out items that are below 14 and above 18
+//OR retain items that are above 14 but below 18
+// look at the titles of those items
+//return/publish the titles of those items
+
+var productName = items.filter(function(midPriceObjects) {
+	return (midPriceObjects.price > 14 && midPriceObjects.price < 18);
+
+});
+
+var namesOfObjects = productName.map(function(nameOfItem) {
+	return nameOfItem.title;
+});
+
+	
+
+
+
+//var midPriceAmounts = prices.filter(function(amount) {
+//	if (amount < 18 && amount > 14) {
+//		return amount};
+//	});
+
+
+
+
+
+
+
+	//var tooMuch = amount >= 18.00;
+	//var tooLittle = amount <= 14.00;
+	//return midPriceAmounts =
+}
+
+
+	)
+
