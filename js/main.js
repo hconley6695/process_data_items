@@ -55,7 +55,12 @@ var priceOfBritItem = britishItem.map(function(y) {
 //filter to all objects with "wood" as material
 //give the title of those objects
 
+var woodObject = items.filter(function(materialOfObject) {
+	if (materialOfObject.materials === ["wood"]) {
+		return materialOfObject;
+	}});
 
+var nameOfWoodObject = woodObject.
 
 
 
