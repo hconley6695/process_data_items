@@ -14,4 +14,6 @@ var totalSum = prices.reduce(function (x, y) {
 });
 
 var average = totalSum/prices.length;
+ average.toFixed(2);
+
 
