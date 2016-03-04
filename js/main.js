@@ -34,12 +34,28 @@ var namesOfObjects = productName.map(function(nameOfItem) {
 
 	
 
+//look at all of the objects in the array. 
+//filter it to find the one that has the GBP currency code
+//give the title and price for that object
+
+var britishItem = items.filter(function(allItems) {
+	if (allItems.currency_code === "GBP") {
+		return allItems;
+	}});
+
+var nameOfBritItem = britishItem.map(function(x) {
+	return x.title;
+});
+
+var priceOfBritItem = britishItem.map(function(y) {
+	return y.price;
+});
+
+//look at all objects in the array
+//filter to all objects with "wood" as material
+//give the title of those objects
 
 
-//var midPriceAmounts = prices.filter(function(amount) {
-//	if (amount < 18 && amount > 14) {
-//		return amount};
-//	});
 
 
 
@@ -47,11 +63,4 @@ var namesOfObjects = productName.map(function(nameOfItem) {
 
 
 
-	//var tooMuch = amount >= 18.00;
-	//var tooLittle = amount <= 14.00;
-	//return midPriceAmounts =
-}
-
-
-	)
 
