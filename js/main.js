@@ -3,14 +3,14 @@
 //introduce a variable named Sum which will add up all of the values of the properties of the objects within an array
 //introduce another variable average which will be defined by take that new value Sum and divide it by the number of values in the array
 //return the average
-//var li1, li2, li3, li4, li5, li6;
+var li1, li2, li3, li4, li5, li6;
 
-//li1 = document.querySelector('li:nth-child(1)');
-//li2 = document.querySelector('li:nth-child(2)');
-//li3 = document.querySelector('li:nth-child(3)');
-//li4 = document.querySelector('li:nth-child(4)');
-//li5 = document.querySelector('li:nth-child(5)');
-//li6 = document.querySelector('li:nth-child(6)');
+li1 = document.querySelector('.answer1');
+li2 = document.querySelector('.answer2');
+li3 = document.querySelector('.answer3');
+li4 = document.querySelector('.answer4');
+li5 = document.querySelector('.answer5');
+li6 = document.querySelector('.answer6');
 
 
 var prices = items.map(function(product) {
@@ -21,11 +21,11 @@ var totalSum = prices.reduce(function (x, y) {
 	return x + y;
 });
 
-var average = totalSum/prices.length;
+var average = totalSum / prices.length;
  average.toFixed(2);
 
-//function ans1() {
-//	li1.textcontent = "The average price is " + average.toFixed(2) + ".";
+li1.textContent = "The average price is " + average.toFixed(2) + ".";
+
 //}
 
 //second answer:  look at each value of price in the array items
@@ -42,6 +42,7 @@ var productName = items.filter(function(midPriceObjects) {
 var namesOfObjects = productName.map(function(nameOfItem) {
 	return nameOfItem.title;
 });
+
 
 	
 
