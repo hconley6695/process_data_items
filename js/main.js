@@ -43,29 +43,49 @@ var britishItem = items.filter(function(allItems) {
 		return allItems;
 	}});
 
-var nameOfBritItem = britishItem.map(function(x) {
-	return x.title;
+var nameOfBritItem = britishItem.map(function(titleOfBritItem) {
+	return titleOfBritItem.title;
 });
 
-var priceOfBritItem = britishItem.map(function(y) {
-	return y.price;
+var priceOfBritItem = britishItem.map(function(cost) {
+	return cost.price;
 });
 
 //look at all objects in the array
-//filter to all objects with "wood" as material
+//filter to all objects with "wood" as material in the material array
 //give the title of those objects
 
-var woodObject = items.filter(function(materialOfObject) {
-	if (materialOfObject.materials === ["wood"]) {
-		return materialOfObject;
+//var woodObject = items.filter(function(materialOfObject) {
+//	if (materialOfObject.material.wood === "wood") {
+//		return materialOfObject;
+//	}});
+
+//return woodObject.title;
+
+
+//var woodObject = items.filter(function(materialOfObject) {
+//	if (materialOfObject.materials === ["wood"]) {
+//		return materialOfObject;
+//	}});
+
+//var nameOfWoodObject = woodObject.title;
+//return nameOfWoodObject;
+
+
+
+///which items made of 8 or more materials?  List name, quantity of items and materials
+
+
+
+
+
+//how many items made by their sellers
+
+var itemBySeller = items.filter(function(allItems) {
+	if (allItems.who_made === "i_did") {
+		return allItems;
 	}});
-
-var nameOfWoodObject = woodObject.
-
-
-
-
-
-
+var numOfSeller = itemBySeller.length;
+return numOfSeller
 
 
