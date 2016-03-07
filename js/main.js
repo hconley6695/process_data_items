@@ -116,6 +116,16 @@ li4e.textContent = titleOfWoodObject[4]
 //list how many items its made of
 //list the items in the materials array
 //list the title of the item
+//IMPORTANT!!  NOT FINISHED Question 5, but have run out of time 
+var manyMaterials = items.filter(function(manyMaterialsItem) {
+	if (manyMaterialsItem.materials.length >= 8) {
+		return manyMaterialsItem;
+}});
+
+var titleOfMany = manyMaterials.map(function(nameOfMany) {
+	return nameOfMany.title;
+});
+
 
 
 
