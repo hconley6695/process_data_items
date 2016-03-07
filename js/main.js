@@ -1,12 +1,16 @@
 
 
 
-var li1, li2, li3, li4, li5, li6;
+var li1, li2, li3, li4a, li4v, li4c, li4d, li4e, li5, li6;
 
 li1 = document.querySelector('.answer1');
 li2 = document.querySelector('.answer2');
 li3 = document.querySelector('.answer3');
-li4 = document.querySelector('.answer4');
+li4a = document.querySelector('.answer4a');
+li4b = document.querySelector('.answer4b');
+li4c = document.querySelector('.answer4c');
+li4d = document.querySelector('.answer4d');
+li4e = document.querySelector('.answer4e');
 li5 = document.querySelector('.answer5');
 li6 = document.querySelector('.answer6');
 
@@ -77,23 +81,41 @@ li3.textContent = nameOfBritItem + " costs £" + priceOfBritItem
 
 //var woodObject = items.filter(function(materialOfObject) {
 //	if (materialOfObject.material.wood === "wood") {
-//		return materialOfObject;
+//	return materialOfObject;
 //	}});
 
 //return woodObject.title;
 
 
-//var woodObject = items.filter(function(materialOfObject) {
-//	if (materialOfObject.materials === ["wood"]) {
-//		return materialOfObject;
-//	}});
+var woodObject = items.filter(function(m) {
+	if (m.materials.indexOf("wood") >= 0) {
+		return m;
+}});
+
+var titleOfWoodObject = woodObject.map(function(nameOfWoodObject) {
+	return nameOfWoodObject.title;
+});
+
+li4a.textContent = titleOfWoodObject[0]
+li4b.textContent = titleOfWoodObject[1]
+li4c.textContent = titleOfWoodObject[2]
+li4d.textContent = titleOfWoodObject[3]
+li4e.textContent = titleOfWoodObject[4]
 
 //var nameOfWoodObject = woodObject.title;
 //return nameOfWoodObject;
 
 
+
+
+
 //Question 5
 ///which items made of 8 or more materials?  List name, quantity of items and materials
+//pinpoint materials object and count how many materials in the array
+//if array has 8 or more materials, return it 
+//list how many items its made of
+//list the items in the materials array
+//list the title of the item
 
 
 
