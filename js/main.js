@@ -25,7 +25,8 @@ var average = totalSum / prices.length;
  average.toFixed(2);
 
 li1.textContent = "The average price is " + average.toFixed(2) + ".";
-
+//answer1.textContent = "The average price is " + average.toFixed(2) + ".";
+//console.log(li1.textContent);
 //}
 
 //second answer:  look at each value of price in the array items
@@ -43,7 +44,7 @@ var namesOfObjects = productName.map(function(nameOfItem) {
 	return nameOfItem.title;
 });
 
-
+li2.textContent = namesOfObjects
 	
 
 //look at all of the objects in the array. 
@@ -63,6 +64,7 @@ var priceOfBritItem = britishItem.map(function(cost) {
 	return cost.price;
 });
 
+li3.textContent = nameOfBritItem + " costs £" + priceOfBritItem
 //look at all objects in the array
 //filter to all objects with "wood" as material in the material array
 //give the title of those objects
@@ -98,6 +100,8 @@ var itemBySeller = items.filter(function(allItems) {
 		return allItems;
 	}});
 var numOfSeller = itemBySeller.length;
-return numOfSeller
+
+li6.textContent = numOfSeller + " were made by their sellers."
+//return numOfSeller  (don't need to return anything if no function)
 
 
