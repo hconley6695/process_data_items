@@ -1,3 +1,5 @@
+$font-family: monospace;
+
 body {
 	font-family: sans-serif;
 }
@@ -21,13 +23,36 @@ body {
 	font-family: serif;
 	font-size: 28px;
 	}
-	.footer {
+}
+
+	.answer1 {
+	font-size: 24px;
+	font-family: $font-family; 
+	color: #656d78;}
+	.answer2 {
+		@extend .answer1;
+	}
+	.answer3 {
+		@extend .answer1;
+	}
+	.answer4 {
+		@extend .answer1;
+	}
+	.answer5 {
+		@extend .answer1;
+	}
+	.answer6 {
+		@extend .answer1;
+	}
+
+
+
+.footer {
 	width: 1020px;
 	height: 100px;
 	background-color: #4b494f;
 	text-align: center;
 	padding-top: 70px;
-	}	
 	span {
 	font-size: 12px;
 	color: #999999;
